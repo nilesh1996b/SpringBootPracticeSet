@@ -6,6 +6,7 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\niles\Downloads\solution-code-spring-mvc-create-home-controller-and-view"/>
 			<item value="C:\Users\niles\OneDrive\Desktop\Spring_boot\PracticeSet\SpringBootPracticeSet\spring_demo_annotation_01"/>
 			<item value="C:\Users\niles\OneDrive\Desktop\Spring_boot\PracticeSet\SpringBootPracticeSet\01_spring_demo_annotation"/>
 		</list>
