@@ -35,7 +35,7 @@ public class CruddemoApplication {
 		System.out.println("Saving the Students ...");
 		studentDAO.save(tempStudent1);
 		studentDAO.save(tempStudent2);
-		studentDAO.save(tempStudent3); 
+		studentDAO.save(tempStudent3);
 
 	}
 
