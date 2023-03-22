@@ -7,7 +7,7 @@ USE `student_tracker`;
 
 DROP TABLE IF EXISTS `student`;
 
-studentCREATE TABLE `student` (
+CREATE TABLE `student` (
   `id` int NOT NULL AUTO_INCREMENT,
   `first_name`varchar(45) DEFAULT NULL,
   `last_name` varchar(45) DEFAULT NULL,
