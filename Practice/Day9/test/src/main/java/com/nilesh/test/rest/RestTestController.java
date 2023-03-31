@@ -1,8 +1,11 @@
 package com.nilesh.test.rest;
 
 import com.nilesh.test.entity.Student;
+import com.nilesh.test.exception.StudentErrorResponse;
 import com.nilesh.test.exception.StudentInvalidValueException;
 import jakarta.annotation.PostConstruct;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
@@ -28,7 +31,7 @@ public class RestTestController {
     {
         return "Hello";
     }
-    @PostMapping("/students")
+    @GetMapping("/students")
     public List<Student> getStudents()
     {
         return studentList;
@@ -39,7 +42,7 @@ public class RestTestController {
     {
         if((studentId>=studentList.size()) || (studentId<0))
         {
-            throw new StudentInvalidValueException("Value is incorrect");
+            throw new StudentInvalidValueException("Student not found by Student id : " + studentId);
         }
         return studentList.get(studentId);
     }
