@@ -8,5 +8,6 @@ public interface EmployeeDAO {
 
     List<Employee> findAll();
 
+    Employee findById(int theId);
 
 }
