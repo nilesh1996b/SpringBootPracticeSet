@@ -3,14 +3,12 @@ package com.luv2code.springboot.cruddemo.entity;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name="employee")
-public class Employee {
-
-    //define fields
+@Table(name = "employee")
+public class Employee  {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name="id")
+    @Column(name = "id")
     private int id;
 
     @Column(name = "first_name")
@@ -20,7 +18,6 @@ public class Employee {
     @Column(name = "email")
     private String email;
 
-    //define constructor
 
     public Employee() {
     }
@@ -30,8 +27,6 @@ public class Employee {
         this.lastName = lastName;
         this.email = email;
     }
-
-    //define getter/setter
 
     public int getId() {
         return id;
@@ -64,10 +59,6 @@ public class Employee {
     public void setEmail(String email) {
         this.email = email;
     }
-
-
-    //define toString
-
 
     @Override
     public String toString() {

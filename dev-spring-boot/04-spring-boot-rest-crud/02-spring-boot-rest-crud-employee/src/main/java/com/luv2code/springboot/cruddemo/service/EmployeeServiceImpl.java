@@ -2,10 +2,12 @@ package com.luv2code.springboot.cruddemo.service;
 
 import com.luv2code.springboot.cruddemo.dao.EmployeeDAO;
 import com.luv2code.springboot.cruddemo.entity.Employee;
+import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+
 @Service
 public class EmployeeServiceImpl implements EmployeeService{
 
@@ -22,7 +24,19 @@ public class EmployeeServiceImpl implements EmployeeService{
     }
 
     @Override
-    public Employee findById(int theId) {
-        return employeeDAO.findById(theId);
+    public Employee findById(int id) {
+        return employeeDAO.findById(id);
+    }
+
+    @Override
+    @Transactional
+    public Employee save(Employee employee) {
+        return employeeDAO.save(employee);
+    }
+
+    @Override
+    @Transactional
+    public void deleteById(int id) {
+        employeeDAO.deleteById(id);
     }
 }
