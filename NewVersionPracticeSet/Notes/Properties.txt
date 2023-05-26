@@ -1,0 +1,15 @@
+ACTUATOR
+
+management.endpoints.web.exposure.include = health,info,beans,threaddump,mappings or *
+management.endpoints.web.exposure.exclude = health,info
+management.info.env.enabled = true
+
+info.app.name = My Application
+info.app.description = This Application is for Poor People
+info.app.version = 1.0.0
+
+SECURITY
+
+spring.security.user.name=nilesh
+spring.security.user.password = nilesh@123 
+

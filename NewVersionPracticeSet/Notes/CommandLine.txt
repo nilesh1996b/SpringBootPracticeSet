@@ -1,0 +1,15 @@
+./mvnw package run in main file
+
+1)
+Direct run mvnw file --
+./mvnw spring-boot:run
+
+2)
+
+Old way
+
+cd target/
+ls *.jar
+java -jar demo-0.0.1-SNAPSHOT.jar
+
+
