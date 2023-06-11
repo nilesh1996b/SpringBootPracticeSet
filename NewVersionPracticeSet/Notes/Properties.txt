@@ -8,8 +8,44 @@ info.app.name = My Application
 info.app.description = This Application is for Poor People
 info.app.version = 1.0.0
 
+BASE PATH FOR ACTUATOR ENDPOINTS
+management.endpoints.web.base-path=/actuator
+
 SECURITY
 
 spring.security.user.name=nilesh
 spring.security.user.password = nilesh@123 
+
+DEFINE CUSTOM PROPERTIES
+
+coach.name = Mickey Mouse
+team.name = The Mouse Club
+
+LOG LEVELS SEVERITY MAPPING
+
+logging.level.org.springframework = DEBUG
+logging.level.org.hibernate = TRACE
+logging.level.com.nilesh = INFO
+
+// LOGGING LEVELS = TRACE DEBUG INFO WARN ERROR FATAL OFF
+
+LOGGING FILE NAME
+logging.file.name = my-crazy-stuff.log
+logging.file.path = c:/myapps/demo
+
+HTTP SERVER PORT
+server.port = 7070
+
+CONTEXT PATH of the application
+server.servlet.context-path=/my-silly-app
+
+// Lazy Initialization - Global configuration
+spring.main.lazy-initialization = true
+
+
+
+
+
+
+
 

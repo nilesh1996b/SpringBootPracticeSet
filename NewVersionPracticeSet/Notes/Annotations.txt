@@ -1,2 +1,11 @@
 @RestController - org.springframework.web.bind.annotation.RestController;
 @GetMapping - org.springframework.web.bind.annotation.GetMapping;
+@Values("${team.name}") - org.springframework.beans.factory.annotation.Value;
+@Autowired org.springframework.beans.factory.annotation.Autowired;
+@Component org.springframework.stereotype.Component;
+@SpringBootApplication org.springframework.boot.autoconfigure.SpringBootApplication;
+
+SpringApplication.run(Practice002Application.class, args); this not an anottaion but it is important ---> org.springframework.boot.SpringApplication;
+
+@Primary org.springframework.context.annotation.Primary; use of Qualifier is recommended
+@Lazy org.springframework.context.annotation.Lazy;

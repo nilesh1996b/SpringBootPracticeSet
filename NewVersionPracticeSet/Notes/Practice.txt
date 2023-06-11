@@ -1,0 +1,11 @@
+Creating Coach interface and a class for implementation as Component
+then in my controller declare Coach as variable and create constructor and then use @GETMAPPING for calling;
+Also do the same with Setter Injection and also field injection
+
+--> Field injectin is not recommended it makes the code harder to unit test
+
+
+Create another package outside the main package in com.nilesh and add your interface and implemented class in the new package
+and now try to run your project, solution in @SpringBootApplication add scanBasePackages
+
+create another implementation of the same interface and add qualifier in my controller
